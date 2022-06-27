@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* 단기 */
+.fc-daygrid-event-harness{
+    
+}
+
+
+.fc-daygrid-event-harness .fc-daygrid-event.fc-daygrid-block-event.fc-h-event.fc-event-start.fc-event-end{
+    background-color: transparent;
+    border: none;
+    color: #000;
+    padding-left: 10px;
+}
+
+.fc-daygrid-event-harness .fc-daygrid-event.fc-daygrid-block-event.fc-h-event.fc-event-start.fc-event-end.day .fc-event-main::after{
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 55%;
+    background-color: #3788d8;
+    position: absolute;
+    top: 9px;
+    left: -7px;
+}
+
+.fc-daygrid-event-harness .fc-daygrid-event.fc-daygrid-block-event.fc-h-event.fc-event-start.fc-event-end.day.outdoor .fc-event-main::after{
+    background-color: red;
+}
+
+.fc-daygrid-event-harness .fc-daygrid-event.fc-daygrid-block-event.fc-h-event.fc-event-start.fc-event-end.week{
+    background-color: green;
+    color: #fff;
+}
+
+/* 장기 */
+
+.fc-daygrid-event-harness.fc-daygrid-event-harness-abs{}
+
+.fc-daygrid-event.fc-daygrid-block-event.fc-h-event.fc-event.fc-event-start.week,
+.fc-daygrid-event.fc-daygrid-block-event.fc-h-event.fc-event.fc-event-end.week,
+.fc-daygrid-event-harness.fc-daygrid-event-harness-abs .fc-daygrid-event.fc-daygrid-block-event.fc-event.week,
+.fc-daygrid-event.fc-daygrid-block-event.fc-h-event.fc-event.fc-event-draggable.week{
+    padding-left: 10px;
+    color: #fff;
+    /* background-color: navy; */
+    border: 0;
+    display: block;
+}
+
+
+
+/* 공통 */  
+.fc-h-event .fc-event-main{
+    color: inherit;
+    position: relative;
+}
+
+.fc .fc-scroller-liquid-absolute,
+.fc .fc-scroller{
+    overflow: hidden!important;
+}
+.fc .fc-scrollgrid-section table,.fc-daygrid-body,.fc-scrollgrid-sync-table{
+    width: 100%!important;
+}
+
+
+.fc-event-title{
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 80%;
+    position: relative;
+    top: -2px;
+}
+
+/* .fc-day-other .fc-daygrid-day-events{
+    opacity: .5;
+} */
+
+.fc-daygrid-event{
+    border-radius: 4.18954px;
+    height: 1.4648vw;
+}
+
+.fc .fc-day-sat .fc-daygrid-day-number { color:#0000FF; }
+.fc .fc-day-sun .fc-daygrid-day-number{ color:#FF0000; }
+
+
+.calenderList {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.calenderList::-webkit-scrollbar {
+    width: 8px;
+}
+.calenderList::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+    border: 2px solid transparent;
+
+}
+.calenderList::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,.3);
+    border-radius: 10px;
+}
+
+.fc .fc-button-primary.fc-today-button{
+    display: none;
+}
